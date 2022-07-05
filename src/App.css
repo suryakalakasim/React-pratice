@@ -12,17 +12,26 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-.tableDesgin{
-  color: aqua;
-  margin: 2px;
-  border: 2px;;
-  border-color: black;
-}
+
 .card{
   color: #61dafb;
 
 }
-
+.nav{
+  background-color:aquamarine;
+  padding: 15 px;
+  text-align: left;
+}
+.link{
+  padding: 10px;
+  
+}
+button{
+  border-radius: 20px;
+  border: none;
+  color: blue;
+  background-color:aquamarine;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

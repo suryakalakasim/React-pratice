@@ -39,7 +39,7 @@ function Dashboad(){
         <input type="submit"/>
         </form>
         
-         <Tabledata state={state} email={email} phnum={phnum} data={obj} /> 
+         <Tabledata state={state} email={email} phnum={phnum}  /> 
         <Link to='/'>Back to Home </Link>
     </div>
 }

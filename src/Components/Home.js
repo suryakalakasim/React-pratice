@@ -2,9 +2,11 @@ import React from "react";
 import {Link} from 'react-router-dom';
 function Home(){
     return<div>
-        <h1 style={{color:"green"}}>Hello World</h1>
-        <Link to='/dashboad'>Dashboad </Link> <br/>
-        <Link to='/homepage'>HomePage </Link>
+        <nav className="nav">
+        <Link className="link" to='/dashboad'>Dashboad </Link> 
+         <Link className="link" to='/homepage'>HomePage </Link>
+         <Link className="link" to='/about'>AboutPage </Link>
+        </nav>
     </div>
 }
 export default Home;
