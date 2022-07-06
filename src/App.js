@@ -1,24 +1,43 @@
+
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './Components/Home';
-import HomePage from './Components/HomePage';
-import Dashboad from './Components/Dashboad';
-import About from './Components/About';
+import {Button, Form,FormGroup,Input,Label} from 'reactstrap';
+import React,{useState} from 'react';
+import Routess from './Components/router';
 function App() {
+  const[show,setShow]=useState(false)
+    const buttonClick=()=>{
+      setShow((preState)=>{
+        return !preState
+      })
+    }
   return (
     <div className="App">
       <marquee> <h1 style={{color:"red"}} >Welcome to React</h1> </marquee><hr/>
-    
-     
-     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/homepage' element={<HomePage/>} />
-        <Route path='/dashboad' element={<Dashboad/>} />
-        <Route path='/about' element={<About/>}/>
-      </Routes>
-    </BrowserRouter>
-
+      
+      <h2>Sign In</h2>
+        <Form onSubmit={buttonClick} className="form">
+          <FormGroup>
+            <Label for="exampleEmail">Username</Label>
+            <Input
+              type="email"
+              name="email"
+              id="exampleEmail"
+              placeholder="example@example.com"
+            />
+          </FormGroup>
+          <FormGroup>
+            <Label for="examplePassword">Password</Label>
+            <Input
+              type="password"
+              name="password"
+              id="examplePassword"
+              placeholder="********"
+            />
+          </FormGroup>
+        <Button onClick={buttonClick}>Submit</Button>
+       
+      </Form>
+      {show&&<Routess/>}
     </div>
   );
 }
