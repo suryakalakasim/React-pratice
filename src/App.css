@@ -10,7 +10,7 @@
   margin-top: 100px;
   padding: 1em;
   text-align: left;
-  width: 600px;
+  width: 800px;
 }
 
 .form {
@@ -45,7 +45,9 @@ label {
   
 }
 button{
-  border-radius: 20px;
+  border-radius: 30px;
+  padding: 5px;
+  margin: 4px;
   border: none;
   color: blue;
   background-color:aquamarine;

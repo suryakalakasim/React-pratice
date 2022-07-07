@@ -4,12 +4,14 @@ import HomePage from './HomePage';
 import Dashboad from './Dashboad';
 import About from './About';
 import Condetionalrendaring from "./conditionalrendaring";
+import Calculeter from "./calculater";
+import Createcontext from "../context/createContext";
 
-function Routess() {
+function Routess(props) {
+  console.log("inputprop>>",props)
   return (
     <div>
       {/* <marquee> <h1 style={{color:"red"}} >Welcome to React</h1> </marquee><hr/> */}
-    
      
      <BrowserRouter>
       <Routes>
@@ -18,8 +20,11 @@ function Routess() {
         <Route path='/dashboad' element={<Dashboad/>} />
         <Route path='/about' element={<About/>}/>
         <Route path='/conditionalrander' element={<Condetionalrendaring/>}/>
+        <Route path='/claculater'element={<Calculeter/>}/>
+        <Route path='/context' element={<Createcontext/>}/>
       </Routes>
     </BrowserRouter>
+    
 
     </div>
   );
