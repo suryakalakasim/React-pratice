@@ -3,10 +3,10 @@ import {Link} from 'react-router-dom';
 import {Tabledata} from './table';
 import '../App.css';
 function Dashboad(){
-    const [state,setState]=useState("")
-    const[email,setMail]=useState("")
-    const[phnum,setPhnum]=useState('')
-    const[formdata,setFormdata]=useState([])
+    //const [state,setState]=useState("")
+   // const[email,setMail]=useState("")
+    //const[phnum,setPhnum]=useState('')
+    const[formdata,setFormdata]=useState({usernsme:"",email:"",phnum:""})
     const name =useRef("")
     const mail =useRef("")
     const num =useRef("")
@@ -19,12 +19,12 @@ function Dashboad(){
     
       const handelSubmit=(e)=>{
           e.preventDefault();
-          setState(...state,name.current.value);
-          setMail(...email,mail.current.value);
-          setPhnum(...phnum,num.current.value)
+         // setState(...state,name.current.value);
+         // setMail(...email,mail.current.value);
+          //setPhnum(...phnum,num.current.value)
           console.log('form>>',name.current.value,mail.current.value,num.current.value)
-          let obj={name:name.current.value,email:mail.current.value,phnum:num.current.value}
-          setFormdata([...formdata,obj])
+          //let obj={name:name.current.value,email:mail.current.value,phnum:num.current.value}
+          setFormdata({id:"1",username:name.current.value,email:mail.current.value,phnum:num.current.value})
           console.log(formdata,"formdata>>>")
 }
     return<div>
@@ -39,7 +39,8 @@ function Dashboad(){
         <input type="submit"/>
         </form>
         
-         <Tabledata state={state} email={email} phnum={phnum}  /> 
+         {/* <Tabledata state={state} email={email} phnum={phnum}  />  */}
+         <Tabledata data={formdata}/>
         <Link to='/'>Back to Home </Link>
     </div>
 }

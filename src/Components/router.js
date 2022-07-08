@@ -6,6 +6,7 @@ import About from './About';
 import Condetionalrendaring from "./conditionalrendaring";
 import Calculeter from "./calculater";
 import Createcontext from "../context/createContext";
+import HookCounter1 from "../useEffect/hookcounter1";
 
 function Routess(props) {
   console.log("inputprop>>",props)
@@ -22,6 +23,7 @@ function Routess(props) {
         <Route path='/conditionalrander' element={<Condetionalrendaring/>}/>
         <Route path='/claculater'element={<Calculeter/>}/>
         <Route path='/context' element={<Createcontext/>}/>
+        <Route path='/counter' element={<HookCounter1/>}/>
       </Routes>
     </BrowserRouter>
     

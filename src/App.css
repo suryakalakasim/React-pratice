@@ -33,6 +33,7 @@ label {
 
 .card{
   color: #61dafb;
+  width: 18rem;
 
 }
 .nav{
@@ -49,8 +50,13 @@ button{
   padding: 5px;
   margin: 4px;
   border: none;
-  color: blue;
-  background-color:aquamarine;
+  color:white;
+  background-color:green;
+}
+.button-style{
+  padding: 5px;
+  margin: 4px;
+  background-color: black;
 }
 .App-header {
   background-color: #282c34;

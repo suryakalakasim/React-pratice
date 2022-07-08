@@ -2,10 +2,17 @@ import React, { useContext } from "react";
 import { UserContext } from './createContext';
 
 function ComponentA() {
-    const context = useContext(UserContext)
-    console.log('ComponentA==>', context.data);
+    const [data,setData]= useContext(UserContext)
+    console.log('ComponentA==>', data);
     return <div>
-        <h3>ComponentA </h3>
+        <div className="card">
+            <div className="card-body">
+                componentA                
+        {data.map((itam,i)=><h1 className="card-text" key={i}>{itam.brandname}:{itam.color}</h1>)}
+            </div>
+            </div>
+           
+    
     </div>
 }
 export default ComponentA;

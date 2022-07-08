@@ -2,6 +2,8 @@ import React from "react";
 import { Table } from 'reactstrap';
  export function Tabledata(props){
      console.log("table>>>",props)
+     const {data}=props
+     console.log("tabledata>>.",data)
     return<div>
 <div>
         <table >
@@ -14,11 +16,11 @@ import { Table } from 'reactstrap';
                 </tr>
             </tbody>
             <tbody>
-                <tr>
-                    <td>1.</td>
-                    <td>{props.state}</td>
-                    <td>{props.email}</td>
-                    <td>{props.phnum}</td>
+               <tr>
+                    <td>{data.id}</td>
+                    <td>{data.username}</td>
+                    <td>{data.email}</td>
+                    <td>{data.phnum}</td>
                 </tr>
             </tbody>
         </table>
@@ -33,10 +35,10 @@ import { Table } from 'reactstrap';
         </thead>
         <tbody>
           <tr>
-            <th scope="row">1</th>
-            <td>{props.state}</td>
-            <td>{props.email}</td>
-            <td>{props.phnum}</td>
+            <th scope="row">{data.id}</th>
+            <td>{data.username}</td>
+            <td>{data.email}</td>
+            <td>{data.phnum}</td>
           </tr>
          
         </tbody>
