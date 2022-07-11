@@ -13,6 +13,7 @@ function Home(){
        <Link className="link" to='/claculater'>Claculater</Link>
        <Link className="link" to='/context'>context</Link>
        <Link className="link" to='/counter'>counter</Link>
+       <Link className="link" to='/components'>component</Link>
         </nav>
     </div>
 }

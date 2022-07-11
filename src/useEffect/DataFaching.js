@@ -1,18 +1,26 @@
 import React,{useState,useEffect} from "react";
 import axios from "axios";
   function DataFaching(){
-      const[post,setPost]=useState([])
+      const[post,setPost]=useState({})
+      const[id,setId]=useState(1)
+      const[idbuttonClick,setIdbuttonClick]=useState(1)
       useEffect(()=>{
-          axios.get("https://jsonplaceholder.typicode.com/posts").then((res)=>{
+          axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`).then((res)=>{
               setPost(res.data)
           }).catch((err)=>{
               console.log(err)
-          },[])
-      })
+          })
+      },[idbuttonClick])
+      const buttonClick=()=>{
+          setIdbuttonClick(id)
+      }
       return<div>
-              <ul>
+          <input type="text"onChange={e=>setId(e.target.value)} value={id}/>
+          <button type="button"onClick={buttonClick}>Fech data</button>
+          <div>{post.title}</div>
+              {/* <ul>
                   {post.map((itam)=><li key={itam.id}>{itam.title}</li>)}
-              </ul>
+              </ul> */}
       </div>
   }
   export default DataFaching;

@@ -15,10 +15,9 @@ function HomePage() {
     }, [])
     return <div>
         <h3>This is an HomePage</h3>
-        
+                       
             {data.map((itam) =><Data key={itam.id} value={itam}/>)}
-              
-            
+           
         <Link to='/'>Back to Home </Link>
     </div>
 }

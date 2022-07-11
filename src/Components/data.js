@@ -11,10 +11,9 @@ export function Data(props){
    }
      return<div>
            
-            
                    <Card className="card" style={{ backgroundColor:color?"blue" : "", color:color? "white" : "", width: "18rem" }}
                         onClick={buttonClick}>id:{value.id}<br /> title:{value.title} </Card>
-            
+
      </div>
  }
 

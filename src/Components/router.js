@@ -7,7 +7,7 @@ import Condetionalrendaring from "./conditionalrendaring";
 import Calculeter from "./calculater";
 import Createcontext from "../context/createContext";
 import HookCounter1 from "../useEffect/hookcounter1";
-
+import Component2 from "../HigherOrderComponent/Component2";
 function Routess(props) {
   console.log("inputprop>>",props)
   return (
@@ -24,6 +24,7 @@ function Routess(props) {
         <Route path='/claculater'element={<Calculeter/>}/>
         <Route path='/context' element={<Createcontext/>}/>
         <Route path='/counter' element={<HookCounter1/>}/>
+        <Route path='/components' element={<Component2/>}/>
       </Routes>
     </BrowserRouter>
     

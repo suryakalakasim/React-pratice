@@ -3,6 +3,7 @@ import './App.css';
 import {Button, Form,FormGroup,Input,Label} from 'reactstrap';
 import React,{useState} from 'react';
 import Routess from './Components/router';
+import ClassComponentA from './context/classComponentA';
 
 function App() {
   const[input,setInput]=useState({email:"",password:""})
@@ -52,6 +53,7 @@ function App() {
         
         </Form>
      {show&&<Routess data={input}/>}
+     <ClassComponentA/>
 
     </div>
   );
