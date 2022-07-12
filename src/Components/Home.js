@@ -5,15 +5,16 @@ function Home(){
         HomePage
         
         <nav className="nav">
-         
+        {/* <Link className="link" to='/app'>App </Link> */}
         <Link className="link" to='/homepage'>HomePage </Link>
         <Link className="link" to='/dashboad'>Dashboad </Link> 
          <Link className="link" to='/about'>AboutPage </Link>
-         <Link className="link" to='/conditionalrander'>Condetionalrendaring</Link>
-       <Link className="link" to='/claculater'>Claculater</Link>
+         <Link className="link" to='/conditionalrender'>ConditionalRendering</Link>
+       <Link className="link" to='/claculator'>Claculator</Link>
        <Link className="link" to='/context'>context</Link>
        <Link className="link" to='/counter'>counter</Link>
-       <Link className="link" to='/components'>component</Link>
+       <Link className="link" to='/event'>EventBinding</Link>
+       {/* <Link className="link" to='/components'>component</Link> */}
         </nav>
     </div>
 }

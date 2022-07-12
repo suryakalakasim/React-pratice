@@ -19,7 +19,7 @@ function About(){
     const submitHandler=(e)=>{
         e.preventDefault();
        // console.log("state>>..",state)
-        password===confirmpassword?console.log("state",state):alert("password and confirmpassword must be same")
+        password===confirmpassword?alert([state.username," your form is submited"]):alert("password and confirmpassword must be same")
         
     }
     return<>

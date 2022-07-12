@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from "react";
 import axios from "axios";
-  function DataFaching(){
+  function DataFetching(){
       const[post,setPost]=useState({})
       const[id,setId]=useState(1)
       const[idbuttonClick,setIdbuttonClick]=useState(1)
@@ -16,11 +16,11 @@ import axios from "axios";
       }
       return<div>
           <input type="text"onChange={e=>setId(e.target.value)} value={id}/>
-          <button type="button"onClick={buttonClick}>Fech data</button>
+          <button type="button"onClick={buttonClick}>Fetch data</button>
           <div>{post.title}</div>
               {/* <ul>
                   {post.map((itam)=><li key={itam.id}>{itam.title}</li>)}
               </ul> */}
       </div>
   }
-  export default DataFaching;
+  export default DataFetching;

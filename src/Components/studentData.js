@@ -14,12 +14,12 @@ function StudentData(props) {
     </tr>
   </thead>
   <tbody>
-    {data.map((x,i)=><tr key={i}>
-      <td>{x.id}</td>
-      <td>{x.name}</td>
-      <td>{x.age}</td>
-      <td>{x.marks}</td>
-    </tr>)}
+    {data?data.map((x,i)=><tr key={i}>
+      <td>{x?.id||"no id"}</td>
+      <td>{x?.name||"no name"}</td>
+      <td>{x?.age||"no data"}</td>
+      <td>{x?.marks||"no data"}</td>
+    </tr>):<h3>No student data</h3>}
   </tbody>
 </Table>
     </div>

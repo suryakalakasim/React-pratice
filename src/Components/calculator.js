@@ -1,15 +1,15 @@
 import React,{useState} from "react";
 import {Link} from 'react-router-dom';
- function Calculeter(){
+ function Calculetor(){
      const[input,setInput]=useState("")
      const[result,setResult]=useState(0)
-     const inputhandler=(e)=>{
+     const inputHandler=(e)=>{
          setInput(e.target.value)
      }
      return<>
-     <h1 style={{color:"green"}}>Claculater</h1>
-     <input type="text" name="input" value={input} onChange={inputhandler}/><br/><br/>
-         <button type="button" onClick={()=>setResult(eval(input))}>Result</button>
+     <h1 style={{color:"green"}}>Claculator</h1>
+     <input type="text" name="input" disabled={input.length===0} value={input} onChange={inputHandler}/><br/><br/>
+         <button type="button" disabled={input.length===0} onClick={()=>setResult(eval(input))}>Result</button>
     <h4>Result is:{result}</h4>
     <button className="button-style" onClick={()=>setInput(input+"1")}>1</button>
     <button className="button-style" onClick={()=>setInput(input+"2")}>2</button>
@@ -30,4 +30,4 @@ import {Link} from 'react-router-dom';
      <Link to="/">back to home</Link> 
      </>
  }
- export default Calculeter;
+ export default Calculetor;
