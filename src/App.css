@@ -58,6 +58,12 @@ button{
   margin: 4px;
   background-color: black;
 }
+.link-style{
+  margin: 2px;
+  padding: 2px;
+  background-color: black;
+  color: white;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

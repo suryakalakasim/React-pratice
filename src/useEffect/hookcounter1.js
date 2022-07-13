@@ -10,7 +10,7 @@ function HookCounter1(){
          <h1>count:{count}</h1>
          <button onClick={()=>setcount(count+1)}>click</button><br/>
          <DataFetching/>
-         <Link to='/'>back to Home</Link>
+         <Link className="link-style" to='/'>back to Home</Link>
     </div>
 }
-export default HookCounter1;
+export default React.memo(HookCounter1);

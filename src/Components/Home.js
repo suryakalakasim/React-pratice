@@ -14,6 +14,7 @@ function Home(){
        <Link className="link" to='/context'>context</Link>
        <Link className="link" to='/counter'>counter</Link>
        <Link className="link" to='/event'>EventBinding</Link>
+       <Link className="link" to='/formik'>Formik</Link>
        {/* <Link className="link" to='/components'>component</Link> */}
         </nav>
     </div>

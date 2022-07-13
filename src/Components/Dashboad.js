@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
-import {Link} from 'react-router-dom';
+//import {Link} from 'react-router-dom';
 import {Tabledata} from './table';
+import {useNavigate} from"react-router-dom";
 import '../App.css';
 function Dashboad(){
     //const [state,setState]=useState("")
@@ -10,7 +11,7 @@ function Dashboad(){
     const name =useRef("")
     const mail =useRef("")
     const num =useRef("")
-    
+    const navigate =useNavigate()
       useEffect(()=>{
          name.current.focus();
        
@@ -41,7 +42,8 @@ function Dashboad(){
         
          {/* <Tabledata state={state} email={email} phnum={phnum}  />  */}
          <Tabledata data={formdata}/>
-        <Link to='/'>Back to Home </Link>
+        {/* <Link to='/'>Back to Home </Link> */}
+        <button onClick={()=>navigate(-1)}>Back to Home</button>
     </div>
 }
 export default Dashboad;

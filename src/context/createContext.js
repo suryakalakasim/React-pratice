@@ -19,7 +19,7 @@ function Createcontext() {
         <h3>CreateContext</h3>
         <UserContext.Provider value={[data, setData]}>
             <ComponentA />
-            <ComponentB />
+            {/* <ComponentB /> */}
             <ComponentC />
         </UserContext.Provider>
         <form onSubmit={submitHandler}>
@@ -28,7 +28,7 @@ function Createcontext() {
             <button disabled={name == "" || color == ""} type="submit">Add</button>
         </form>
         <br />
-        <Link to='/'>back to Home</Link>
+        <Link className="link-style" to='/'>back to Home</Link>
     </div>
 }
 export default React.memo(Createcontext);

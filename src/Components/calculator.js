@@ -25,9 +25,9 @@ import {Link} from 'react-router-dom';
     <button className="button-style" onClick={()=>setInput(input+"-")}>-</button>
     <button className="button-style" onClick={()=>setInput(input+"/")}>/</button>
     <button className="button-style" onClick={()=>setInput(input+"*")}>*</button>
-    <button className="button-style" onClick={()=>setInput("")}>clr</button><br/>
+    <button className="button-style" onClick={()=>setInput("")}>clr</button><br/><br/>
 
-     <Link to="/">back to home</Link> 
+     <Link className="link-style" to="/">back to home</Link> 
      </>
  }
  export default Calculetor;

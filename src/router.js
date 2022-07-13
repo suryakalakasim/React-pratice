@@ -9,6 +9,7 @@ import Createcontext from "./context/createContext";
 import HookCounter1 from "./useEffect/hookcounter1";
 import Component2 from "./HigherOrderComponent/Component2";
 import EvenntBind from "./Components/EventBinding";
+import RegistationForm from "./Formik/RegistrationForm";
 //import App from "./App";
 function Routess() {
   return (
@@ -26,6 +27,7 @@ function Routess() {
         <Route path='/context' element={<Createcontext/>}/>
         <Route path='/counter' element={<HookCounter1/>}/>
         <Route path='/event' element={<EvenntBind/>}/>
+        <Route path='/formik' element={<RegistationForm/>}/>
         {/* <Route path='/app' element={<App/>}/> */}
         {/* <Route path='/components' element={<Component2/>}/> */}
       </Routes>

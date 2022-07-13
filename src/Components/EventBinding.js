@@ -4,7 +4,7 @@ class EvenntBind extends React.Component{
     constructor(){
         super()
      this.state={
-         massege: "hello"
+         massege: "Hello"
      }  
 
     //method3
@@ -18,7 +18,7 @@ class EvenntBind extends React.Component{
      } */
      ClickHandler=()=>{
          this.setState({
-             massege:"good bye"
+             massege:"Good Bye"
          })
      }
     
@@ -29,8 +29,8 @@ class EvenntBind extends React.Component{
             {/*<button onClick={this.ClickHandler.bind(this)}>click</button>*/}
            {/*method2*/}
            {/*<button onClick={()=>this.ClickHandler()}>click</button>*/}
-           <button onClick={this.ClickHandler}>click</button>
-           <Link to='/'>Back to Home</Link>
+           <button onClick={this.ClickHandler}>click</button><br/><br/>
+           <Link className="link-style" to='/'>Back to Home</Link>
         </div>
     }
 }
