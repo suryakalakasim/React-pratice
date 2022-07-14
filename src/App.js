@@ -3,9 +3,9 @@ import { Button, Form, FormGroup, Input, Label } from 'reactstrap';
 import React, { useState } from 'react';
 import Routess from './router';
 import ClassComponentA from './context/classComponentA';
-//import {useHistory} from 'react-router-dom';
+// import {useNavigate} from 'react-router-dom';
 function App() {
-  // let history=useHistory();
+   //let navigate=useNavigate();
   const [input, setInput] = useState({ email: "", password: "" })
   let [show, setShow] = useState(false)
   const { email, password } = input;
@@ -16,10 +16,10 @@ function App() {
   const submitHandler = (e) => {
     e.preventDefault();
     console.log(input, "input>>.")
-    setShow((preState) => {
-      return !preState
-    })
-    // history.push('/')
+   setShow((preState) => {
+     return !preState
+   })
+    // navigate('-1')
   }
   return (
     <div className="App">
@@ -52,6 +52,7 @@ function App() {
         <Button>Submit</Button>
 
       </Form>
+      
       {show && <Routess />}
       {/* <ClassComponentA/> */}
 
