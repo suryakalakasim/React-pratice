@@ -1,6 +1,8 @@
 import React from "react";
 import {useNavigate} from 'react-router-dom';
 import{useFormik} from 'formik';
+import SignupForm from "./SinUp-form";
+import ValidatonSchama from "./Yup-vallidation";
 function RegistrationForm(){
     const initialValues = { name:"", email:"", password:"" }
     const onSubmit =(values)=>{
@@ -45,7 +47,9 @@ function RegistrationForm(){
             value={formik.values.password} onChange={formik.handleChange}/><br/>
             {formik.touched.password && formik.errors.password?<div className="error">{formik.errors.password}</div>:null}<br/>
              <button type="submit"> Registration</button><br/><br/>
-        </form>
+        </form><br/>
+        <ValidatonSchama/><br/>
+        <SignupForm/><br/>
 <button type="button" onClick={()=>navigate(-1)}>Back to Home</button>
     </div>
 }

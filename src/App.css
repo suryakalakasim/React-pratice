@@ -59,9 +59,10 @@ button{
   width: 500px;
   
 }
-
+Label{padding-right: 15px;}
 input{
-  border-radius: 1em;
+  border-radius: 5px;
+  padding-inline-start: 0px;
   font-weight:bold;
 }
 .error{

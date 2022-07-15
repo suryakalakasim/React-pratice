@@ -28,7 +28,7 @@ function App() {
       <h2>Sign In</h2>
       <Form onSubmit={submitHandler} className="form">
         <FormGroup>
-          <Label for="exampleEmail">Username</Label>
+          <Label for="exampleEmail">Username: </Label>
           <Input
             type="email"
             name="email"
@@ -39,7 +39,7 @@ function App() {
           />
         </FormGroup>
         <FormGroup>
-          <Label for="examplePassword">Password</Label>
+          <Label for="examplePassword">Password :</Label>
           <Input
             type="password"
             name="password"
