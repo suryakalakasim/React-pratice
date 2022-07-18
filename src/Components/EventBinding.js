@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from 'react-router-dom'
+import Desingning from "./Designing";
 class EvenntBind extends React.Component{
     constructor(){
         super()
@@ -24,13 +25,14 @@ class EvenntBind extends React.Component{
     
     render(){
         return<div>
-            <h1> {this.state.massege}</h1>
+            {/* <h1> {this.state.massege}</h1> */}
             {/*method1*/}
             {/*<button onClick={this.ClickHandler.bind(this)}>click</button>*/}
            {/*method2*/}
            {/*<button onClick={()=>this.ClickHandler()}>click</button>*/}
-           <button onClick={this.ClickHandler}>click</button><br/><br/>
-           <Link className="link-style" to='/'>Back to Home</Link>
+           {/* <button onClick={this.ClickHandler}>click</button><br/><br/> */}
+           <Link className="link-style" to='/'>Back to Home</Link><br/><br/>
+           {/* <Desingning/> */}
         </div>
     }
 }

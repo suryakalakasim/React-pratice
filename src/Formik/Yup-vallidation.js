@@ -9,29 +9,21 @@ function ValidatonSchama() {
          alert("your form was submited")
 
          }
-    const validationSchama =Yup.object({
-        firstname:Yup.string().max(15, 'Must be 15 characters or less').required("required"),
-        lastname:Yup.string().max(20, 'Must be 20 characters or less').required("required"),
-        email:Yup.string().email("invalid email address").required("required"),
+    const  validationSchema= Yup.object({
+        firstname: Yup.string()
+          .max(5, 'Must be 5 characters or less')
+          .required('Required'),
+        lastname: Yup.string()
+          .max(20, 'Must be 20 characters or less')
+          .required('Required'),
+        email: Yup.string().email('Invalid email address').required('Required'),
         password:Yup.string().required("required"),
         confirmpassword:Yup.string().required("required")
     })
      let formik=useFormik({initialValues,
-        //onSubmit,
-        //validationSchama
-        validationSchema: Yup.object({
-            firstname: Yup.string()
-              .max(5, 'Must be 15 characters or less')
-              .required('Required'),
-            lastname: Yup.string()
-              .max(20, 'Must be 20 characters or less')
-              .required('Required'),
-            email: Yup.string().email('Invalid email address').required('Required'),
-            password:Yup.string().required("required")
-          }),
-          onSubmit: values => {
-            alert(JSON.stringify(values, null, 2));
-          }
+        onSubmit,
+        validationSchema
+     
     })
     return <div>
         <h1>Sign in Form</h1>
