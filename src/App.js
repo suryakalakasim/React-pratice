@@ -3,7 +3,6 @@ import { Button, Form, FormGroup, Input, Label } from 'reactstrap';
 import React, { useState } from 'react';
 import Routess from './router';
 import ClassComponentA from './context/classComponentA';
-import Desingning from './Components/Designing';
 // import {useNavigate} from 'react-router-dom';
 function App() {
    //let navigate=useNavigate();
@@ -56,8 +55,8 @@ function App() {
       
       {show && <Routess />}<br/>
       {/* <ClassComponentA/> */}
-      <Desingning/>
-
+      
+      
 
     </div>
   );

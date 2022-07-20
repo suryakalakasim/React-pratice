@@ -14,7 +14,7 @@ import RegistrationForm from "./Formik/RegistrationForm";
 function Routess() {
   return (
     <div>
-      {/* <marquee> <h1 style={{color:"red"}} >Welcome to React</h1> </marquee><hr/> */}
+      
      
      <BrowserRouter>
       <Routes>

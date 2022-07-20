@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Card } from "reactstrap";
 import {useNavigate} from"react-router-dom";
+import Desingning from "./Designing";
+import SinUpForm from "./Bootstrap-Style";
 function About(){
     const[state,setState]=useState({
         username:"",
@@ -41,6 +43,8 @@ function About(){
         </form>
         </Card>
         </center>
+        <Desingning/>
+        <SinUpForm/>
         <button onClick={()=>navigate(-1)}>Back to Home</button>
     </>
 }
