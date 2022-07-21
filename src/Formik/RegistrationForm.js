@@ -3,6 +3,7 @@ import {useNavigate} from 'react-router-dom';
 import{useFormik} from 'formik';
 import SignupForm from "./SinUp-form";
 import ValidatonSchama from "./Yup-vallidation";
+import ProfileForm from "./ProfileForm";
 function RegistrationForm(){
     const initialValues = { name:"", email:"", password:"" }
     const onSubmit =(values)=>{
@@ -48,8 +49,9 @@ function RegistrationForm(){
             {formik.touched.password && formik.errors.password?<div className="error">{formik.errors.password}</div>:null}<br/>
              <button type="submit"> Registration</button><br/><br/>
         </form><br/>
-        <ValidatonSchama/><br/>
-        <SignupForm/><br/>
+        {/* <ValidatonSchama/><br/> */}
+        {/* <SignupForm/><br/> */}
+        {/* <ProfileForm/><br/> */}
 <button type="button" onClick={()=>navigate(-1)}>Back to Home</button>
     </div>
 }

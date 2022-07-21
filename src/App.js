@@ -3,6 +3,7 @@ import { Button, Form, FormGroup, Input, Label } from 'reactstrap';
 import React, { useState } from 'react';
 import Routess from './router';
 import ClassComponentA from './context/classComponentA';
+import ProfileForm from './Formik/ProfileForm';
 // import {useNavigate} from 'react-router-dom';
 function App() {
    //let navigate=useNavigate();
@@ -56,7 +57,7 @@ function App() {
       {show && <Routess />}<br/>
       {/* <ClassComponentA/> */}
       
-      
+      <ProfileForm/>
 
     </div>
   );

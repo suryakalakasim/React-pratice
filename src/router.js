@@ -10,7 +10,8 @@ import HookCounter1 from "./useEffect/hookcounter1";
 import Component2 from "./HigherOrderComponent/Component2";
 import EvenntBind from "./Components/EventBinding";
 import RegistrationForm from "./Formik/RegistrationForm";
-//import App from "./App";
+import PageNotFond from "./Components/PageNotFound";
+import CakeContainer from './Redux/CakeContainer';
 function Routess() {
   return (
     <div>
@@ -28,7 +29,8 @@ function Routess() {
         <Route path='/counter' element={<HookCounter1/>}/>
         <Route path='/event' element={<EvenntBind/>}/>
         <Route path='/formik' element={<RegistrationForm/>}/>
-        {/* <Route path='/app' element={<App/>}/> */}
+        <Route path='*' element={<PageNotFond/>}/>
+        <Route path='/redux' element={<CakeContainer/>}/>
         {/* <Route path='/components' element={<Component2/>}/> */}
       </Routes>
     </BrowserRouter>

@@ -154,6 +154,11 @@ input{
   background-color: black;
   color: white;
 }
+.input-style{
+  border: none;
+  border-radius: 0px;
+  border-bottom: 2px solid silver ;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

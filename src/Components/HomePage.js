@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import {Data} from "./data";
 import {useNavigate} from"react-router-dom";
+import Row from 'react-bootstrap/Row';
+
 function HomePage() {
     const [data, setData] = useState([])
     const navigate =useNavigate()
@@ -18,7 +20,9 @@ function HomePage() {
     return <div>
         <h3>This is an HomePage</h3>
                        
+        <Row xs={1} md={3} className="g-4">         
             {data&&data.map((itam) =><Data key={itam.id} value={itam}/>)}
+            </Row>
             <button onClick={()=>navigate(-1)}>Back to Home</button>
         {/* <Link to='/'>Back to Home </Link> */}
     </div>
