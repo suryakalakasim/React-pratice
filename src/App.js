@@ -4,9 +4,9 @@ import React, { useState } from 'react';
 import Routess from './router';
 import ClassComponentA from './context/classComponentA';
 import ProfileForm from './Formik/ProfileForm';
-// import {useNavigate} from 'react-router-dom';
+ //import {useNavigate} from 'react-router-dom';
 function App() {
-   //let navigate=useNavigate();
+  // let navigate=useNavigate();
   const [input, setInput] = useState({ email: "", password: "" })
   let [show, setShow] = useState(false)
   const { email, password } = input;
@@ -16,11 +16,13 @@ function App() {
   }
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(input, "input>>.")
-   setShow((preState) => {
-     return !preState
-   })
-    // navigate('-1')
+    //console.log(input, "input>>.")
+    password.length<=5?alert("password must be 5 charaters"):alert([input.email," your form is submited"])
+        
+  setShow((preState) => {
+    return !preState
+       })
+    //navigate('/')
   }
   return (
     <div className="App">
@@ -53,7 +55,7 @@ function App() {
         <Button>Submit</Button>
 
       </Form>
-      
+      {/* <Routess /><br/> */}
       {show && <Routess />}<br/>
       {/* <ClassComponentA/> */}
       

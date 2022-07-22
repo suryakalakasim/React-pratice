@@ -158,7 +158,13 @@ input{
   border: none;
   border-radius: 0px;
   border-bottom: 2px solid silver ;
+
 }
+.gender{
+  margin-left: 20px;
+  
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
