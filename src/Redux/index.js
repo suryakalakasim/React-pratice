@@ -1,1 +1,1 @@
-export {buyCake} from './redux/Cake/cakeActions';
+//export {buyCake} from './redux/Cake/cakeActions';
