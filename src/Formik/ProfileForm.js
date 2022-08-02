@@ -9,7 +9,9 @@ import { MdOutlineHome } from "react-icons/md";
 import {MdLanguage} from "react-icons/md";
 import {MdOutlineApartment} from "react-icons/md";
 import * as Yup from 'yup';
+import {useNavigate} from 'react-router-dom';
 function ProfileForm() {
+    const navigate =useNavigate();
   const initialValues = { firstName: '', lastName: '', email: '',phoneNumber:"",city:"",address1:"",address2:"",country:"",zipCode:"" }
   const validationSchema = Yup.object({
     firstName: Yup.string().matches(/^[aA-zZ\s]+$/, "Only alphabets are allowed for this field ")
@@ -134,7 +136,7 @@ function ProfileForm() {
         </Form>
       </Formik>
     </Container>
-
+    <button onClick={()=>navigate(-1)}>Back to Home</button>
   </div>
 }
 export default ProfileForm;

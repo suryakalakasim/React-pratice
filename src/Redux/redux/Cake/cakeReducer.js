@@ -13,8 +13,8 @@ const cakeReducer=(state=initialState,action)=>{
  }
 }
 export default cakeReducer;*/}
-const count = 0;
-export default function reducer(state=count,action){
+//const count = 0;
+{/*export default function reducer(state=count,action){
     const{type,payload}=action
     switch(type){
         case "INCREMENT":
@@ -23,8 +23,8 @@ export default function reducer(state=count,action){
                 return state- 1;
                 default: return state;
     }
-}
-{/*const initial=[]
+}*/}
+const initial=[]
    export default function reducer(state=initial,action){
      const{type,payload}=action
     switch(type){
@@ -35,4 +35,4 @@ export default function reducer(state=count,action){
                 default :
                 return state;
     }
-   }*/}
+   }

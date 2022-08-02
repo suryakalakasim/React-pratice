@@ -1,6 +1,7 @@
 import React,{useState} from "react";
-import {Link} from 'react-router-dom';
+import {useNavigate} from"react-router-dom";
  function Calculetor(){
+    const navigate =useNavigate()
      const[input,setInput]=useState("")
      const[result,setResult]=useState(0)
      const inputHandler=(e)=>{
@@ -27,7 +28,7 @@ import {Link} from 'react-router-dom';
     <button className="button-style" onClick={()=>setInput(input+"*")}>*</button>
     <button className="button-style" onClick={()=>setInput("")}>clr</button><br/><br/>
 
-     <Link className="link-style" to="/">back to home</Link> 
+    <button onClick={()=>navigate(-1)}>Back to Home</button>
      </>
  }
  export default Calculetor;

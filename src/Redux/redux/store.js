@@ -1,6 +1,7 @@
 import {createStore,applyMiddleware } from "redux";
 //import cakeReducer from "./Cake/cakeReducer";
-import reducer from "./Cake/cakeReducer";
+//import reducer from "./Cake/cakeReducer";
+import reducer from "./new/reducer";
 import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
 

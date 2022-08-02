@@ -3,9 +3,9 @@ import { connect } from "react-redux";
 const Badge = ({ product }) => {
     return <div style={{ "margin": "80px 0px 10px 0px" }}>
         <center>
-            <button type="button" class="btn btn-primary position-relative">
+            <button type="button">
                 Total Products
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
+                <span >
                     {product.length}
                 </span>
             </button>

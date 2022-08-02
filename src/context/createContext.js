@@ -1,11 +1,12 @@
 import React, { createContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import ComponentA from "./componentA";
 import ComponentB from "./componentB";
 import ComponentC from "./componentC";
 
 export const UserContext = createContext()
 function Createcontext() {
+    const navigate=useNavigate()
     const [data, setData] = useState([{ brandname: "oppo", color: "gray" },
     { brandname: "moto", color: "white" }, { brandname: "vivo", color: "black" }
     ])
@@ -28,7 +29,7 @@ function Createcontext() {
             <button disabled={name == "" || color == ""} type="submit">Add</button>
         </form>
         <br />
-        <Link className="link-style" to='/'>back to Home</Link>
+        <button onClick={()=>navigate(-1)}>Back to Home</button>
     </div>
 }
 export default React.memo(Createcontext);

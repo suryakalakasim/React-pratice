@@ -4,21 +4,21 @@
         type:BUY_CAKE
     }
 }*/}
- export const IncAction=()=> async disptch=>{
+{/*export const IncAction=()=> async disptch=>{
      disptch({type:"INCREMENT"})
  }
   export const DecAction=()=> async disptch=>{
       disptch({type:"DECREMENT"})
-  }
- {/* export const AddProduct=(value)=> async disptch  =>{
+  }*/}
+  export const AddProduct=(value)=> async disptch  =>{
       disptch({
           type: "add",
-          payload:"value"
+          payload:{value}
       })
   }
-  export const RemoveProduct =()=> async disptch =>{
+  export const RemoveProduct =(value)=> async disptch =>{
       disptch({
           type:"remove",
           payload:{name:value}
       })
-  }*/}
+  }

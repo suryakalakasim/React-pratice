@@ -98,6 +98,12 @@ margin-left: 100px;
   padding: 10px;
   
 }
+.image-style{
+  border-radius: 15px;
+  margin-left: 390px;
+  margin-bottom: 10px;
+  
+}
 .signIn-button{
   border: none;
   color: white;
@@ -147,6 +153,12 @@ input{
 }
 .error{
   color: red;
+}
+.styleForLink{
+  background-color: blue;
+  color: white;
+  justify-content: center;
+  margin-left: 420px;
 }
 .link-style{
   margin: 2px;

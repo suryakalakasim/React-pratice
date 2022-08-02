@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route,Navigate } from "react-router-dom";
 import Home from './Components/Home';
 import HomePage from './Components/HomePage';
 import Dashboad from './Components/Dashboad';
@@ -11,16 +11,19 @@ import Component2 from "./HigherOrderComponent/Component2";
 import EvenntBind from "./Components/EventBinding";
 import RegistrationForm from "./Formik/RegistrationForm";
 import PageNotFond from "./Components/PageNotFound";
-
+import Welcome from "./Components/Welcome";
 import Redux from "./Redux/Redux";
+import ProfileForm from "./Formik/ProfileForm";
 function Routess() {
   return (
     <div>
       
      
-     {/* <BrowserRouter> */}
+     
       <Routes>
-        <Route path='/' element={<Home/>} />
+      <Route path='/' element={<Navigate to={'/welcome'}/>} />
+      <Route path='/welcome' element={<Welcome/>} />
+        <Route path='/home' element={<Home/>} />
         <Route path='/homepage' element={<HomePage/>} />
         <Route path='/dashboad' element={<Dashboad/>} />
         <Route path='/about' element={<About/>}/>
@@ -32,9 +35,10 @@ function Routess() {
         <Route path='/formik' element={<RegistrationForm/>}/>
         <Route path='*' element={<PageNotFond/>}/>
         <Route path='/redux' element={<Redux/>}/>
+        <Route path='/profile' element={<ProfileForm/>}/>
         {/* <Route path='/components' element={<Component2/>}/> */}
       </Routes>
-    {/* </BrowserRouter> */}
+    
     
 
     </div>
