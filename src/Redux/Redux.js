@@ -1,14 +1,15 @@
 import React from "react";
 import {useNavigate} from 'react-router-dom';
-//import CakeContainer from './CakeContainer';
+import CakeContainer from './CakeContainer';
 import {Provider} from 'react-redux';
-import store from "./Contacts/contactStore";
+//import store from "./Contacts/contactStore";
 import ContactList from "./Contacts/contactList";
-//import store from "./redux/store";
+import store from "./redux/store";
 //import Counter from "./Counter";
 //import  Badge  from "./Bach";
 //import Cart from "./Cart";
-//import Operation from "./redux/add-subOperation";
+import Operation from "./redux/add-subOperation";
+
 
 function Redux(){
     const navigate=useNavigate();

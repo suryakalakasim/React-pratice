@@ -10,8 +10,7 @@ export default function contactReducer(state = initialState, action) {
     switch (type) {
         case ViewContact:
             return { ...state, contactInfo:payload.value }
-        // case ViewContact:
-        //     return ""
+       
         // case DeleteContact:
         //     return state.filter(contact => contact.id !== contact.payload)
         default:

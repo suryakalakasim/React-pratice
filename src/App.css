@@ -160,6 +160,11 @@ input{
   justify-content: center;
   margin-left: 420px;
 }
+.reduxSaga{
+  color: white;
+  background-color: black;
+  text-align: center;
+}
 .link-style{
   margin: 2px;
   padding: 2px;

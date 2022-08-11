@@ -14,6 +14,7 @@ import PageNotFond from "./Components/PageNotFound";
 import Welcome from "./Components/Welcome";
 import Redux from "./Redux/Redux";
 import ProfileForm from "./Formik/ProfileForm";
+
 function Routess() {
   return (
     <div>
@@ -36,6 +37,7 @@ function Routess() {
         <Route path='*' element={<PageNotFond/>}/>
         <Route path='/redux' element={<Redux/>}/>
         <Route path='/profile' element={<ProfileForm/>}/>
+       
         {/* <Route path='/components' element={<Component2/>}/> */}
       </Routes>
     
