@@ -18,7 +18,8 @@ function Home(){
        <Link className="link" to='/formik'>Formik</Link>
        <Link className="link" to='/redux'>Redux </Link>
        <Link className="link" to='/profile'>profile </Link>
-     
+       <Link className="link" to='/flexbox'>CssFlexbox</Link>
+       <Link className="link" to='/design'>Designing</Link>
        {/* <Link className="link" to='/components'>component</Link> */}
         </nav><br/>
         <Link className="styleForLink" to='/'>Back </Link>

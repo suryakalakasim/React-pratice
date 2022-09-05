@@ -14,6 +14,8 @@ import PageNotFond from "./Components/PageNotFound";
 import Welcome from "./Components/Welcome";
 import Redux from "./Redux/Redux";
 import ProfileForm from "./Formik/ProfileForm";
+import CssFlexbox from "./Css-Flexbox/CssFlexbox";
+import Design from "./Desiging/Design";
 
 function Routess() {
   return (
@@ -37,7 +39,8 @@ function Routess() {
         <Route path='*' element={<PageNotFond/>}/>
         <Route path='/redux' element={<Redux/>}/>
         <Route path='/profile' element={<ProfileForm/>}/>
-       
+        <Route path='/flexbox' element={<CssFlexbox/>}/>
+       <Route path='/design' element={<Design/>}/>
         {/* <Route path='/components' element={<Component2/>}/> */}
       </Routes>
     
