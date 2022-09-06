@@ -16,13 +16,13 @@ import Redux from "./Redux/Redux";
 import ProfileForm from "./Formik/ProfileForm";
 import CssFlexbox from "./Css-Flexbox/CssFlexbox";
 import Design from "./Desiging/Design";
-
+import DesignPage1 from "./Desiging/Page1";
+import DesignPage2 from "./Desiging/Page2";
+import DesignPage3 from "./Desiging/Page3";
+import DesignPage4 from "./Desiging/Page4";
 function Routess() {
   return (
     <div>
-      
-     
-     
       <Routes>
       <Route path='/' element={<Navigate to={'/welcome'}/>} />
       <Route path='/welcome' element={<Welcome/>} />
@@ -42,6 +42,10 @@ function Routess() {
         <Route path='/flexbox' element={<CssFlexbox/>}/>
        <Route path='/design' element={<Design/>}/>
         {/* <Route path='/components' element={<Component2/>}/> */}
+        <Route path='/page1' element={<DesignPage1/>}/>
+        <Route path='/page2' element={<DesignPage2/>}/>
+       <Route path='/page3' element={<DesignPage3/>}/>
+       <Route path='/page4' element={<DesignPage4/>}/>
       </Routes>
     
     

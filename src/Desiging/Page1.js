@@ -1,6 +1,6 @@
 import React from 'react';
 import images from '../images/pexels-blaque-x-863963.jpg';
-import DesignPage2 from './page2';
+
 
 function DesignPage1() {
   return (

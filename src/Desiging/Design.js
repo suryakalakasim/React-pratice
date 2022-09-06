@@ -1,12 +1,16 @@
-import React from 'react'
-import DesignPage1 from './Page1'
-import DesignPage2 from './page2'
+import React from 'react';
+import {Link} from 'react-router-dom';
 
 function Design() {
   return (
     <div>
-        <DesignPage1/><br/>
-        <DesignPage2/>
+      <nav>
+      <Link className="link" to='/page1'>Home </Link>
+       <Link className="link" to='/page2'>Dashboad</Link>
+       <Link className="link" to='/page3'>About</Link>
+       <Link className="link" to='/page4'>Page</Link>
+      </nav>
+
     </div>
   )
 }
